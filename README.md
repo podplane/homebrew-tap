@@ -5,7 +5,7 @@ This repository is the Homebrew tap for the Podplane CLI.
 ## Install
 
 ```bash
-brew install podplane/podplane
+brew install podplane/tap/podplane
 ```
 
 ## Release Process

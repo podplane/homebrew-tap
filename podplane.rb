@@ -5,13 +5,13 @@
 class Podplane < Formula
   desc "The official CLI for Podplane"
   homepage "https://podplane.dev"
-  version "0.6.0"
+  version "0.7.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/podplane/podplane/releases/download/v0.6.0/podplane_0.6.0_darwin_amd64.tar.gz"
-      sha256 "f498dfb3d59c3a7d12e1a3d9d8341f82c795631239a84483a73bf19225a2df57"
+      url "https://github.com/podplane/podplane/releases/download/v0.7.0/podplane_0.7.0_darwin_amd64.tar.gz"
+      sha256 "4882fe8acdca0ffa557c1630c3c414a2839cec4a8d8346a206093b67a0769ccd"
 
       define_method(:install) do
         bin.install "podplane"
@@ -19,8 +19,8 @@ class Podplane < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/podplane/podplane/releases/download/v0.6.0/podplane_0.6.0_darwin_arm64.tar.gz"
-      sha256 "fe1724e7ba74ca2e93918424cc477c0a794cb24b04b44e62289e2180cc20dc7b"
+      url "https://github.com/podplane/podplane/releases/download/v0.7.0/podplane_0.7.0_darwin_arm64.tar.gz"
+      sha256 "0335085c47454966b59341d0d7d344907ff190da6802cb0630ccd2e297d71e6f"
 
       define_method(:install) do
         bin.install "podplane"
@@ -31,16 +31,16 @@ class Podplane < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/podplane/podplane/releases/download/v0.6.0/podplane_0.6.0_linux_amd64.tar.gz"
-      sha256 "02fb6137d0789cc27d618e741d291bdbfd4ea8cfb2bd1609224beb183fc651c9"
+      url "https://github.com/podplane/podplane/releases/download/v0.7.0/podplane_0.7.0_linux_amd64.tar.gz"
+      sha256 "0e91ab23a86b43accb1688d8dc0f33258ae45793850b8c88e1133215f13b6f95"
       define_method(:install) do
         bin.install "podplane"
         bin.install_symlink "podplane" => "docker-credential-podplane"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/podplane/podplane/releases/download/v0.6.0/podplane_0.6.0_linux_arm64.tar.gz"
-      sha256 "5b6c5bef13616f985b1ab15b5f67b3f77290e33e753fe6a9aa49fc32021b859f"
+      url "https://github.com/podplane/podplane/releases/download/v0.7.0/podplane_0.7.0_linux_arm64.tar.gz"
+      sha256 "713239584ed0fb6c54237c540795a1e7bc12af60f41e03376a82afcea484ccab"
       define_method(:install) do
         bin.install "podplane"
         bin.install_symlink "podplane" => "docker-credential-podplane"

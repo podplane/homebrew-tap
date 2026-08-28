@@ -5,21 +5,21 @@
 class Ocimage < Formula
   desc "Build, tag, & push container images. No runtime dependencies."
   homepage "https://github.com/podplane/ocimage"
-  version "1.0.8"
+  version "1.0.9"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/podplane/ocimage/releases/download/v1.0.8/ocimage_1.0.8_darwin_amd64.tar.gz"
-      sha256 "acc2946f627582667c5f688b21ee686626d28c2394296800df04f4f1e9025098"
+      url "https://github.com/podplane/ocimage/releases/download/v1.0.9/ocimage_1.0.9_darwin_amd64.tar.gz"
+      sha256 "a996055fd6a423fce93055fb04300d25155e1a164bc7f2855577b773396411f8"
 
       define_method(:install) do
         bin.install "ocimage"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/podplane/ocimage/releases/download/v1.0.8/ocimage_1.0.8_darwin_arm64.tar.gz"
-      sha256 "584ed18ac6a5ae2058b90c9f7acf32b9d6188d964400d15b1c14f8ca5eec21b5"
+      url "https://github.com/podplane/ocimage/releases/download/v1.0.9/ocimage_1.0.9_darwin_arm64.tar.gz"
+      sha256 "98c0e6389aa2e24c0a16fc04cb916a49d6c26f497f4ec41fe237eac973fa7332"
 
       define_method(:install) do
         bin.install "ocimage"
@@ -29,15 +29,15 @@ class Ocimage < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/podplane/ocimage/releases/download/v1.0.8/ocimage_1.0.8_linux_amd64.tar.gz"
-      sha256 "8cfe3c26e355a0b5d9bf91b7880272735c9f75e54954e61ff61152a956db42f8"
+      url "https://github.com/podplane/ocimage/releases/download/v1.0.9/ocimage_1.0.9_linux_amd64.tar.gz"
+      sha256 "bea161337ba152598430af94c49d3d276609cb1f8c7113f184526218535aa203"
       define_method(:install) do
         bin.install "ocimage"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/podplane/ocimage/releases/download/v1.0.8/ocimage_1.0.8_linux_arm64.tar.gz"
-      sha256 "e94627ca9af2f29c58096429548cf73293f251f5f304ca3b5ae5ec538ac34727"
+      url "https://github.com/podplane/ocimage/releases/download/v1.0.9/ocimage_1.0.9_linux_arm64.tar.gz"
+      sha256 "cfffc1cbf4fc24ee9503fc1e2000b14833bca83d32b5ddd8ab03280e62e03ae0"
       define_method(:install) do
         bin.install "ocimage"
       end

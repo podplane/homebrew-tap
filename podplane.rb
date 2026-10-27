@@ -5,13 +5,13 @@
 class Podplane < Formula
   desc "The official CLI for Podplane"
   homepage "https://podplane.dev"
-  version "0.13.0"
+  version "0.14.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/podplane/podplane/releases/download/v0.13.0/podplane_0.13.0_darwin_amd64.tar.gz"
-      sha256 "0713ff16d10c6d402f4f0dbc504dacc77bcce9467db10c6e4b272cbd89785fce"
+      url "https://github.com/podplane/podplane/releases/download/v0.14.0/podplane_0.14.0_darwin_amd64.tar.gz"
+      sha256 "f104c261f8cfbdf3b0547c84e91d6f1e27de329c636be7070c5bfcafe9a7d082"
 
       def install
         bin.install "podplane"
@@ -19,8 +19,8 @@ class Podplane < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/podplane/podplane/releases/download/v0.13.0/podplane_0.13.0_darwin_arm64.tar.gz"
-      sha256 "0c32b0128d9248ce0166f8f490a573f081001999d846a37e14f95f4c3d773d85"
+      url "https://github.com/podplane/podplane/releases/download/v0.14.0/podplane_0.14.0_darwin_arm64.tar.gz"
+      sha256 "1d4bec29b16a093e1128a0fbcd2f9fa146ef1d0aedbc9d6eda5c89323f9b3a50"
 
       def install
         bin.install "podplane"
@@ -32,8 +32,8 @@ class Podplane < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/podplane/podplane/releases/download/v0.13.0/podplane_0.13.0_linux_amd64.tar.gz"
-        sha256 "15ee3b788d8e6d0abf0cd4771923c2d0815956aa9e6d07513aff0221e107854a"
+        url "https://github.com/podplane/podplane/releases/download/v0.14.0/podplane_0.14.0_linux_amd64.tar.gz"
+        sha256 "6f92ccccecf01f1c604e27f03c810554b2006b214c7c08c55fe5ad3d00364a52"
 
         def install
           bin.install "podplane"
@@ -43,8 +43,8 @@ class Podplane < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/podplane/podplane/releases/download/v0.13.0/podplane_0.13.0_linux_arm64.tar.gz"
-        sha256 "ed81da8e0b64e922e02e04c074b5a0a851939d2ec912d944a310ebc27c5cb1ca"
+        url "https://github.com/podplane/podplane/releases/download/v0.14.0/podplane_0.14.0_linux_arm64.tar.gz"
+        sha256 "5d5ef4bb735410ff83cf1e41f4f9109c59d62ea8c31c4a1eab15760e97c91f40"
 
         def install
           bin.install "podplane"
